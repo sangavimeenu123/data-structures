@@ -1,0 +1,44 @@
+n=0
+list1=[1,2,3,5,6]
+while n==0:
+    print("choose your option:")
+    print('\t1.insert,\t2.delete,\t3.search\t4.display\t.exit')
+    op=int(input())
+    if (op==1):
+        print("\t1.insert at beginning:,\t2.insert at any position\t3.insert at end")
+        m=int(input())
+        if (m==1):
+            list1.insert(0,5)
+            print(list1)
+        elif (m==2):
+            list1.insert(5,8)
+            print(list1)
+        else:
+            list1.append(9)
+            print(list1)
+    if(op==2):
+        print("\t1.delete at beginning:,\t2.delete at any position\t3.delete at end")
+        s=int(input())
+        if (s==1 and list1!=[]):
+            list1.remove(0)
+            print("del at beginning:",list1)
+        elif (s==2 and list1!=[]):
+            list1.deletenode(4)
+            print("del at any position:",list1)
+        else(s==3 and and list1!=[]):
+            list1.pop()
+            print("del at end:",list1)
+    if(op==3):
+        t=input()
+        for i in list1:
+            if i==t:
+                print("yes")
+            else:
+                print("no")
+    if(op==4):
+        print("elements in list:",list1)
+    if(op==5):
+        break
+        
+        
+        
